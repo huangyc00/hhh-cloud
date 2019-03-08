@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: hhh-provider-user
+
+server:
+    port: 8001 #启动端口
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

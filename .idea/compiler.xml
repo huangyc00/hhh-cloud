@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hhh-admin" />
+        <module name="hhh-center" />
+        <module name="hhh-common" />
+        <module name="hhh-user" />
+        <module name="hhh-user-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hhh-admin" target="1.8" />
+      <module name="hhh-api" target="1.8" />
+      <module name="hhh-center" target="1.8" />
+      <module name="hhh-cloud" target="1.8" />
+      <module name="hhh-common" target="1.8" />
+      <module name="hhh-consumer" target="1.8" />
+      <module name="hhh-provider" target="1.8" />
+      <module name="hhh-user" target="1.8" />
+      <module name="hhh-user-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

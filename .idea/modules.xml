@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hhh-consumer/hhh-admin/hhh-admin.iml" filepath="$PROJECT_DIR$/hhh-consumer/hhh-admin/hhh-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-api/hhh-api.iml" filepath="$PROJECT_DIR$/hhh-api/hhh-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-center/hhh-center.iml" filepath="$PROJECT_DIR$/hhh-center/hhh-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-cloud.iml" filepath="$PROJECT_DIR$/hhh-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-common/hhh-common.iml" filepath="$PROJECT_DIR$/hhh-common/hhh-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-consumer/hhh-consumer.iml" filepath="$PROJECT_DIR$/hhh-consumer/hhh-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-provider/hhh-provider.iml" filepath="$PROJECT_DIR$/hhh-provider/hhh-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-provider/hhh-user/hhh-user.iml" filepath="$PROJECT_DIR$/hhh-provider/hhh-user/hhh-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhh-api/hhh-user-api/hhh-user-api.iml" filepath="$PROJECT_DIR$/hhh-api/hhh-user-api/hhh-user-api.iml" />
+    </modules>
+  </component>
+</project>
