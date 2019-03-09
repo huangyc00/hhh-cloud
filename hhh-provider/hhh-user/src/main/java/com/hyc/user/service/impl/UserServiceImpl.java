@@ -10,13 +10,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findById(String id) {
-        if("1".equals(id)){
+//        if("1".equals(id)){
             User user = new User();
             user.setId("hello world");
             return user;
-        }else{
-            throw new RuntimeException("hahahaha");
-        }
+//        }else{
+//            throw new RuntimeException("hahahaha");
+//        }
 
     }
 
