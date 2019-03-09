@@ -21,6 +21,14 @@
         <module>hhh-common</module>
     </modules>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring.cloud.version>Finchley.M8</spring.cloud.version>
+        <spring.cloud.alibaba.version>0.2.1.RELEASE</spring.cloud.alibaba.version>
+    </properties>
+
     <dependencies>
         <!--&lt;!&ndash; web &ndash;&gt;-->
         <dependency>
@@ -29,9 +37,13 @@
         </dependency>
 
         <!--增加eureka-server的依赖-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
         <!--增加feign的依赖 内部引用ribbon-->
@@ -47,13 +59,20 @@
         </dependency>
 
     </dependencies>
-    <!--依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号-->
+    <!--&lt;!&ndash;依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号&ndash;&gt;-->
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.M8</version>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
