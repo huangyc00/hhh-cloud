@@ -12,5 +12,10 @@ public class UserServiceFallBack implements UserService {
         return null;
     }
 
+    @Override
+    public String sendUserMsg(User user) {
+        return null;
+    }
+
 
 }
