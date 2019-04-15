@@ -4,7 +4,7 @@ spring:
   application:
     name: hhh-consumer-admin
   profiles:
-    active: dev
+    active:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     joda-date-time-format: yyyy-MM-dd HH:mm:ss

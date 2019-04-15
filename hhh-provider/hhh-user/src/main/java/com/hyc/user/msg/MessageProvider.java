@@ -11,14 +11,13 @@ import org.springframework.messaging.support.MessageBuilder;
 
 import javax.annotation.Resource;
 
-@EnableBinding(DefaultProcess.class)
 public class MessageProvider {
 
-    @Autowired
-    @Qualifier(value = "study_output")
-    private MessageChannel out; // 消息的发送管道
+//    @Autowired
+    private DefaultProcess defaultProcess; // 消息的发送管道
 
     public void send(User user) {
-        this.out.send(MessageBuilder.withPayload(user).build()); // 创建并发送消息
+        defaultProcess.output().send(MessageBuilder.withPayload(user).build()); // 创建并发送消息
     }
+
 }
