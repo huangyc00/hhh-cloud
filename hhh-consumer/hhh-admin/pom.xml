@@ -22,10 +22,14 @@
                 <!--<groupId>org.springframework.cloud</groupId>-->
                 <!--<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
             <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.demo.hyc</groupId>-->
+            <!--<artifactId>hhh-stream</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.demo.hyc</groupId>
-            <artifactId>hhh-stream</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
         </dependency>
     </dependencies>
 </project>

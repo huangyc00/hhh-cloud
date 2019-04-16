@@ -11,11 +11,11 @@ import org.springframework.cloud.stream.messaging.Sink;
  * @date 2019-04-15 20:18
  */
 @Slf4j
-@EnableBinding(Sink.class)
+//@EnableBinding(Sink.class)
 public class SinkReceiver {
 
 
-    @StreamListener(Sink.INPUT)
+//    @StreamListener(Sink.INPUT)
     public void receive(Object payload) {
         log.info("Received: " + payload);
     }
