@@ -5,7 +5,7 @@ spring:
     base-url: localhost:9411
   client:
     serviceUrl:
-      defaultZone: http:localhost:8761/eureka/
+      defaultZone: http:localhost:8000/eureka/
   cloud:
     stream:
       binders: # 在此处配置要绑定的rabbitmq的服务信息；

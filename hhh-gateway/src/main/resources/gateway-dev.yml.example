@@ -1,0 +1,36 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enable: true #是否与服务注册于发现组件进行结合，通过 serviceId 转发到具体的服务实例。默认为 false，设为 true 便开启通过服务中心的自动根据 serviceId 创建路由的功能。
+      routes:
+#      - id: neo_route
+#        uri: http://www.ityouknow.com
+#        predicates:
+#        - Path=/spring-cloud
+#      - id: after_route
+#        uri: http://ityouknow.com
+#        predicates:
+#         - After=2018-01-20T06:06:06+08:00[Asia/Shanghai]
+#      - id: host_route
+#        uri: http://ityouknow.com
+#        predicates:
+#        - Host=**.ityouknow.com
+#      - id: method_route
+#        uri: http://ityouknow.com
+#        predicates:
+#        - Method=GET
+#      - id: host_route
+#        uri: http://ityouknow.com
+#        predicates:
+#        - Path=/foo/{segment}
+#      - id: query_route
+#        uri: http://ityouknow.com
+#        predicates:
+#        - Query=smile
+#        - Query=keep, pu.
+      - id: remoteaddr_route
+        uri: http://ityouknow.com
+        predicates:
+        - RemoteAddr=172.21.0.37/24

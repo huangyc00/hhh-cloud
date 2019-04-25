@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: add_request_parameter_route
+        uri: lb://hhh-provider-user
+        filters:
+        - AddRequestParameter=foo, bar
+        predicates:
+        - Method=GET
