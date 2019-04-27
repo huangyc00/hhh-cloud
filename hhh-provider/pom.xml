@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>hhh-user</module>
+        <module>hhh-product</module>
+        <module>hhh-product</module>
+        <module>hhh-product</module>
     </modules>
 
     <!--<dependencies>-->
