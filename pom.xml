@@ -21,6 +21,7 @@
         <module>hhh-provider</module>
         <module>hhh-stream</module>
         <module>hhh-gateway</module>
+        <module>hhh-model</module>
     </modules>
 
     <properties>
@@ -33,22 +34,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
-
-        <!--增加eureka-server的依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <!--增加feign的依赖 内部引用ribbon-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>

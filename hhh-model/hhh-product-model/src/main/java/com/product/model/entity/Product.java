@@ -1,4 +1,4 @@
-package com.hyc.user.api.entity;
+package com.product.model.entity;
 
 import com.hyc.common.entity.BaseEntity;
 import lombok.Data;
@@ -9,7 +9,6 @@ public class Product extends BaseEntity {
     private String no;
 
     private String name;
-
 
 
 }

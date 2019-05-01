@@ -1,7 +1,7 @@
 package com.hyc.user.api.fallback;
 
-import com.hyc.user.api.entity.Product;
 import com.hyc.user.api.service.ProductService;
+import com.product.model.entity.Product;
 
 public class ProductFallBack implements ProductService {
 

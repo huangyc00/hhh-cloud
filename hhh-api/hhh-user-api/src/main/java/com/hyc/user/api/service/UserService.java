@@ -1,6 +1,6 @@
 package com.hyc.user.api.service;
 
-import com.hyc.user.api.entity.User;
+import com.user.model.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
