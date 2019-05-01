@@ -1,11 +1,16 @@
 spring:
   application:
     name: hhh-center
+
 server:
-  port: 8761 #启动端口
+  port: 8000 #启动端口
+
 eureka:
   client:
-    registerWithEureka: false  #false:不作为一个客户端注册到注册中心
-    fetchRegistry: false #为true时，可以启动，但报异常：Cannot execute request on any known server
+    #由于该应用为注册中心,设置为false,表明不向注册中心注册自己
+    register-with-eureka: false
+    fetch-registry: false #为true时，可以启动，但报异常：Cannot execute request on any known server
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
   server:
     enable-self-preservation: false     #禁用自我保护机制

@@ -1,8 +1,10 @@
-package com.hyc.user.api.fallback;
+package com.hyc.product.api.fallback;
 
-import com.hyc.user.api.service.ProductService;
+import com.hyc.product.api.service.ProductService;
 import com.product.model.entity.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductFallBack implements ProductService {
 
 

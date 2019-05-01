@@ -1,7 +1,7 @@
 package com.hyc.admin.controller;
 
-import com.hyc.user.api.entity.User;
 import com.hyc.user.api.service.UserService;
+import com.user.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,4 +22,5 @@ public class UserController {
     public String test1(){
         return "test1";
     }
+
 }

@@ -1,11 +1,11 @@
-package com.hyc.user.api.service;
+package com.hyc.product.api.service;
 
 import com.product.model.entity.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value = "hhh-provider-product")
+@FeignClient(value = "hhh-provider-product" )
 public interface ProductService {
 
     @GetMapping(value = "/api/product/{id}")
