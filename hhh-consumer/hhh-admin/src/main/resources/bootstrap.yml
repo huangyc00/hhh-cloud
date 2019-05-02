@@ -3,6 +3,8 @@
 spring:
   application:
     name: hhh-consumer-admin
+  config:
+    name: application,hystrix
   profiles:
     active:
   jackson:

@@ -1,28 +1,28 @@
 package com.hyc.user.service.impl;
 
-import com.hyc.user.api.entity.User;
 import com.hyc.user.api.service.UserService;
+import com.user.model.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
 @RestController
 public class UserServiceImpl implements UserService {
 
+    @Autowired
+    private HttpServletRequest request;
 
     @Override
-    public User findById(String id) {
-//        if("1".equals(id)){
+    public User findById(@PathVariable("id") String id) {
+        if(id.equals("error")){
+            throw new RuntimeException(id);
+        }
         User user = new User();
-        user.setId("hello world");
+        user.setId(id);
+        user.setName(id + request.getServerPort() + new Date());
         return user;
-//        }else{
-//            throw new RuntimeException("hahahaha");
-//        }
-
     }
-
-    @Override
-    public String sendUserMsg(User user) {
-        return "success";
-    }
-
 }

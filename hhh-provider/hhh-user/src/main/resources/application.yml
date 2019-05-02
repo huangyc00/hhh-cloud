@@ -1,11 +1,12 @@
 server:
   port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
 spring:
   zipkin:
     base-url: localhost:9411
-  client:
-    serviceUrl:
-      defaultZone: http:localhost:8000/eureka/
   cloud:
     stream:
       binders: # 在此处配置要绑定的rabbitmq的服务信息；
