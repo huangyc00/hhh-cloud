@@ -25,5 +25,10 @@ public class UserFallBack implements UserService {
         throw new RuntimeException("调用失败");
     }
 
+    @Override
+    public String ribbon() {
+       throw new RuntimeException("调用失败");
+    }
+
 
 }

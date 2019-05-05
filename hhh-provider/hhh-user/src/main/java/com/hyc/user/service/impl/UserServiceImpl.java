@@ -25,4 +25,11 @@ public class UserServiceImpl implements UserService {
         user.setName(id + request.getServerPort() + new Date());
         return user;
     }
+
+    @Override
+    public String ribbon() {
+        return "hello ribbon,port:" + request.getServerPort();
+    }
+
+
 }

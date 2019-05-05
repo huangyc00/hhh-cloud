@@ -17,4 +17,6 @@ public interface UserService {
     @GetMapping(value = "/api/user/{id}")
     User findById(@PathVariable("id") String id);
 
+    @GetMapping(value = "/ribbon")
+    String ribbon();
 }
