@@ -10,5 +10,6 @@ Ribbon会自动的帮助你基于某种规则（如简单轮询，随机连接�
 ![](https://img-blog.csdn.net/20180401083228491)
 Ribbon工作时分为两步：第一步选择Eureka Server，它优先选择在同一个Zone且负载较少的Server；第二步再根据用户指定的策略，再从Server取到的服务注册列表中选择一个地址。其中Ribbon提供了很多策略，例如轮询round robin、随机Random、根据响应时间加权等
 
-
+####源码阅读参考
+https://www.cnblogs.com/longyunfei/p/7329398.html
  
