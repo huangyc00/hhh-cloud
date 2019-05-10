@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 
 @EnableBinding(TestTopic.class)
-@EnableDiscoveryClient
+@EnableDiscoveryClient(autoRegister = false)
 @EnableFeignClients(basePackages = {"com.hyc.*.api"})
 @SpringBootApplication
 public class AdminApplication {
