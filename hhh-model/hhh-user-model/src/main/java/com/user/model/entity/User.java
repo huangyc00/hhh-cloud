@@ -10,4 +10,7 @@ public class User extends BaseEntity {
 
     private String username;
 
+    private String productId;
+
+    private String orderId;
 }

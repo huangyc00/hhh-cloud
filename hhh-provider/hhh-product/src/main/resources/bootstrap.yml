@@ -3,12 +3,15 @@
 spring:
   application:
     name: hhh-provider-product
+  config:
+    name: application
   profiles:
     active:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     joda-date-time-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+
 
 
 

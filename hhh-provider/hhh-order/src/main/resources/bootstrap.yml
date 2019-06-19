@@ -2,15 +2,16 @@
 #spring的配置类
 spring:
   application:
-    name: hhh-consumer-admin
+    name: hhh-provider-order
   config:
-    name: application,hystrix
+    name: application
   profiles:
-    active: dev
+    active:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     joda-date-time-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+
 
 
 
