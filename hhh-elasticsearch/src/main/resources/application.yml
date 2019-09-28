@@ -1,0 +1,14 @@
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+   # 集群名
+spring:
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 127.0.0.1:9300  # 连接节点,注意在集群中通信都是9200端口，否则会报错无法连接上！
+      repositories.enabled: true     # 仓库中数据存储
+      local: false  # 是否本地连接

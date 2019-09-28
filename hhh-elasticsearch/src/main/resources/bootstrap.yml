@@ -1,0 +1,16 @@
+#统一的配置类,千年不动的配置放到这里
+#spring的配置类
+spring:
+  application:
+    name: hhh-elasticsearch
+  config:
+    name: application
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+
+
+
