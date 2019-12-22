@@ -5,7 +5,7 @@ import com.hyc.product.api.service.ProductService;
 import com.hyc.user.api.service.UserService;
 import com.order.model.entity.Order;
 import com.product.model.entity.Product;
-import com.user.model.entity.User;
+import com.member.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;

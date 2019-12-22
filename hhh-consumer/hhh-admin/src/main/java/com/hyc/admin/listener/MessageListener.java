@@ -1,6 +1,6 @@
 //package com.hyc.admin.listener;
 //
-//import com.user.model.entity.User;
+//import User;
 //import org.springframework.messaging.Message;
 //
 ////@Component

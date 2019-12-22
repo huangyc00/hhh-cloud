@@ -1,7 +1,7 @@
 package com.hyc.user.service.impl;
 
 import com.hyc.user.api.service.UserService;
-import com.user.model.entity.User;
+import com.member.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

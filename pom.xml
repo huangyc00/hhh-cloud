@@ -33,6 +33,8 @@
         <java.version>1.8</java.version>
         <spring.cloud.version>Finchley.SR2</spring.cloud.version>
         <spring.cloud.alibaba.version>0.2.1.RELEASE</spring.cloud.alibaba.version>
+        <mybatis-plus-boot-starter.version>3.1.1</mybatis-plus-boot-starter.version>
+
     </properties>
 
     <dependencies>
@@ -41,7 +43,15 @@
             <artifactId>lombok</artifactId>
             <version>1.16.14</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus-boot-starter.version}</version>
+        </dependency>
     </dependencies>
     <!--&lt;!&ndash;依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号&ndash;&gt;-->
     <dependencyManagement>

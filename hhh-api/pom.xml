@@ -15,6 +15,7 @@
         <module>hhh-user-api</module>
         <module>hhh-product-api</module>
         <module>hhh-order-api</module>
+        <module>hhh-member-api</module>
     </modules>
 
     <dependencies>

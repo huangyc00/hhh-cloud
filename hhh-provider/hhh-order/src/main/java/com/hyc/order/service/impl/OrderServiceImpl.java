@@ -18,7 +18,6 @@ public class OrderServiceImpl implements OrderService {
     public Order findById(@PathVariable("id") String id) {
         Order order = new Order();
         order.setId(id);
-        order.setName("order");
         return order;
     }
 }

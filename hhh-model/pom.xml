@@ -15,7 +15,12 @@
         <module>hhh-product-model</module>
         <module>hhh-user-model</module>
         <module>hhh-order-model</module>
+        <module>hhh-member-model</module>
+        <module>hhh-tenant-model</module>
+        <module>hhh-sys-model</module>
+        <module>hhh-coupon-model</module>
     </modules>
+
 
     <dependencies>
         <dependency>
@@ -23,6 +28,7 @@
             <artifactId>hhh-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
 </project>

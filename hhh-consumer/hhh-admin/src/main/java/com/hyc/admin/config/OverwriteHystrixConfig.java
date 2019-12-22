@@ -1,7 +1,7 @@
 //package com.hyc.admin.config;
 //
 //import com.hyc.user.api.fallback.UserFallBack;
-//import com.user.model.entity.User;
+//import User;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.user.model.entity;
+package com.member.model.entity;
 
 import com.hyc.common.entity.BaseEntity;
 import lombok.Data;
