@@ -12,10 +12,6 @@
     <artifactId>zipkin-server</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <!--引入的zipkinServer依赖-->
         <dependency>
             <groupId>io.zipkin.java</groupId>

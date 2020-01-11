@@ -10,9 +10,9 @@ public class BaseEntity implements Serializable{
 
     private String id;
 
-    private Date createTime;
+    private Date createDate;
 
-    private Date updateTime;
+    private Date updateDate;
 
     //逻辑删除标志,0没被删除,1被删除
     private Integer deleteFlag;
