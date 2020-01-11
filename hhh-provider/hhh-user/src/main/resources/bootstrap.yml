@@ -2,7 +2,7 @@
 #spring的配置类
 spring:
   application:
-    name: hhh-provider-user
+    name: hhh-provider-member
   profiles:
     active: dev
   jackson:

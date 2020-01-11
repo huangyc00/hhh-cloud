@@ -1,6 +1,6 @@
 //package com.hyc.admin.config;
 //
-//import com.hyc.user.api.fallback.UserFallBack;
+//import UserFallBack;
 //import User;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;

@@ -1,5 +1,7 @@
 package com.hyc.order;
 
+import com.hyc.common.annotation.EnableGlobalAdvice;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +13,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
+@MapperScan(value = "com.order.model.mapper")
+@EnableGlobalAdvice
 public class OrderApplication {
 
     public static void main(String[] args) {

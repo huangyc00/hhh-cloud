@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>2.0.6.RELEASE</version>
     </parent>
     <modules>
         <module>hhh-consumer</module>
@@ -22,6 +22,7 @@
         <module>hhh-stream</module>
         <module>hhh-gateway</module>
         <module>hhh-model</module>
+        <module>hhh-dto</module>
         <module>zipkin-server</module>
         <module>hhh-elasticsearch</module>
         <module>hhh-netty</module>
@@ -47,6 +48,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--增加feign的依赖 内部引用ribbon-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>

@@ -1,6 +1,6 @@
 package com.hyc.product.service.impl;
 
-import com.hyc.product.api.service.ProductService;
+import com.hyc.api.product.service.ProductService;
 import com.product.model.entity.Product;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
