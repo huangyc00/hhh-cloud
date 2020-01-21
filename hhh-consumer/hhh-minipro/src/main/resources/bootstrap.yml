@@ -4,7 +4,7 @@ spring:
   application:
     name: hhh-consumer-minipro
   config:
-    name: application,hystrix
+    name: application,hystrix,sleuth
   profiles:
     active: dev
   jackson:

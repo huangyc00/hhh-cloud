@@ -33,5 +33,5 @@ buildNumber.properties
 # Created by .ignore support plugin (hsz.mobi)
 ## IntelliJ Idea IDE
 .idea/
-*.iml
 .svn/
+/hhh-provider/hhh-order/src/main/resources/logback.xml

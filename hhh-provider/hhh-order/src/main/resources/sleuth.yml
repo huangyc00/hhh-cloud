@@ -1,0 +1,16 @@
+spring:
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0                   # 将采样比例设置为1.0，也就是全部都需要。默认是0.1
+#  zipkin:
+#    base-url: http://47.112.116.114:9411
+  zipkin:
+    sender:
+      type: kafka  # 支持三种 方式  RABBIT, KAFKA, WEB
+    service:
+      name: ${spring.application.name} #可以和 application.name 同名 但是必须设置
+  kafka:
+    bootstrap-servers: 47.112.116.114:9092

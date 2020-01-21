@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+
+    <property name="APP_NAME" value="mall_backend" />
+    <contextName>${APP_NAME}</contextName>
+
+    <!--为了防止进程退出时，内存中的数据丢失，请加上此选项-->
+      <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5level [%thread] %logger{0}: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+      <appender name="aliyun" class="com.aliyun.openservices.log.logback.LoghubAppender">
+        <!--必选项-->
+        <!-- 账号及网络配置 -->
+        <endpoint>cn-shenzhen.log.aliyuncs.com</endpoint>
+        <accessKeyId>LTAIuN1sa2lrSdll</accessKeyId>
+        <accessKeySecret>MNsNlvPfsh56pGMvd65uClebPkFG9f</accessKeySecret>
+
+        <!-- sls 项目配置 -->
+        <project>hhh-order</project>
+        <logStore>test_appender</logStore>
+        <!--必选项 (end)-->
+
+        <!-- 可选项 -->
+        <!-- <topic>your topic</topic>  -->
+        <!-- <source>your source</source> -->
+
+        <!-- 可选项 详见 '参数说明'-->
+        <totalSizeInBytes>104857600</totalSizeInBytes>
+        <maxBlockMs>60000</maxBlockMs>
+        <ioThreadCount>8</ioThreadCount>
+        <batchSizeThresholdInBytes>524288</batchSizeThresholdInBytes>
+        <batchCountThreshold>4096</batchCountThreshold>
+        <lingerMs>2000</lingerMs>
+        <retries>10</retries>
+        <baseRetryBackoffMs>100</baseRetryBackoffMs>
+        <maxRetryBackoffMs>100</maxRetryBackoffMs>
+
+        <!-- 可选项 通过配置 encoder 的 pattern 自定义 log 的格式 -->
+        <encoder>
+            <pattern>%d %-5level [%thread] %logger{0}: %msg</pattern>
+        </encoder>
+
+        <!-- 可选项 设置 time 字段呈现的格式 -->
+        <timeFormat>yyyy-MM-dd'T'HH:mmZ</timeFormat>
+        <!-- 可选项 设置 time 字段呈现的时区 -->
+        <timeZone>Asia/Shanghai</timeZone>
+      </appender>
+
+      <!-- 可用来获取StatusManager中的状态
+      <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener"/>
+      -->
+
+    <root level="INFO">
+        <appender-ref ref="stdout" />
+        <appender-ref ref="aliyun" />
+    </root>
+
+</configuration>

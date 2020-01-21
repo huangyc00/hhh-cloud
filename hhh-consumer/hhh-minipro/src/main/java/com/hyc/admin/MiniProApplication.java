@@ -10,9 +10,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"com.hyc.api.*"})
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class},scanBasePackages={"com.hyc.api.*.fallback","com.hyc.admin"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.hyc.api.*.fallback", "com.hyc.admin"})
 @EnableGlobalAdvice
 public class MiniProApplication {
+
 
     public static void main(String[] args) {
         SpringApplication.run(MiniProApplication.class, args);

@@ -103,23 +103,4 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    public static void main(String[] args) {
-
-        String str=null;
-
-        str=String.format("exceptionType: %s,requestUri: %s,reason: %s", "aaa","abc","aaa");           // 格式化字符串
-
-        System.out.println(str);                                                                                     // 输出字符串变量
-
-        System.out.printf("显示正负数的符号：%+d与%d%n", 99,-99);
-
-        System.out.printf("最牛的编号是：%03d%n", 7);
-
-        System.out.printf("Tab键的效果是：% 8d%n", 7);
-
-        System.out.printf("整数分组的效果是：%,d%n", 9989997);
-
-        System.out.printf("一本书的价格是：%2.2f元%n", 49.8);
-
-    }
 }
