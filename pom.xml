@@ -23,7 +23,6 @@
         <module>hhh-gateway</module>
         <module>hhh-model</module>
         <module>hhh-dto</module>
-        <module>zipkin-server</module>
         <module>hhh-elasticsearch</module>
         <module>hhh-netty</module>
     </modules>
